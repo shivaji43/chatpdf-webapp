@@ -21,7 +21,7 @@ with st.sidebar:
     add_vertical_space(5)
     st.write('Made by [Shivaji Raut](https://www.linkedin.com/in/shivaji-raut-1b667822b/)')
  
-load_dotenv()
+OPENAI_API_KEY=st.secrets["OPENAI_API_KEY"]
  
 def main():
     st.header("Chat with PDF")
