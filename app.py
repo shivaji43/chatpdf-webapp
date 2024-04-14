@@ -12,6 +12,25 @@ from langchain.callbacks import get_openai_callback
 import os
  
 # Sidebar contents
+
+# Add the Google Ads script to your Streamlit app
+st.markdown("""
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6171822268442011"
+     crossorigin="anonymous"></script>
+""", unsafe_allow_html=True)
+
+# Create an ad unit
+st.markdown("""
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+     data-ad-slot="YOUR_AD_SLOT_ID"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+""", unsafe_allow_html=True)
 with st.sidebar:
     st.title('Chatpdf')
     st.markdown('''
